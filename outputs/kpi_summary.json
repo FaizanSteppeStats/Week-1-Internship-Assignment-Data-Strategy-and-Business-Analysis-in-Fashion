@@ -1,0 +1,14 @@
+{
+  "data_status": "SYNTHETIC DEMONSTRATION - NOT COMPANY RESULTS",
+  "sales_rows": 1248,
+  "unique_skus": 16,
+  "forecast_test_sku_weeks_uncensored": 153,
+  "stockout_test_rows_excluded": 39,
+  "wape_pct": {
+    "naive_4wk": 19.09,
+    "blend_4_8wk": 18.86
+  },
+  "replenishment_review_skus": 11,
+  "rfm_customer_count": 520,
+  "note": "Forecasts are illustrative and may be biased by past stockouts; no measured ROI, lift, or external validation."
+}
