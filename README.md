@@ -50,6 +50,4 @@ The script overwrites its synthetic files for a reproducible baseline. The defau
 - [Open-Meteo Historical Weather API](https://open-meteo.com/en/docs/historical-weather-api)
 - [UCI Online Retail (general retail, not apparel-specific)](https://archive.ics.uci.edu/dataset/352/online+retail)
 
-## Suggested GitHub publishing steps
 
-Sign into GitHub, create a **public** repository such as `fashion-data-strategy-week1`, and upload the files at the root of this folder (or use `git init`, `git add .`, `git commit -m "Week 1 fashion data strategy"` and push to a GitHub remote). Copy the live repository URL into the internship form. Do **not** enter an example or invented URL. Make sure the Word report is also uploaded to the internship portal directly.
