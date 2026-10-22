@@ -1,0 +1,3 @@
+order_id,line_id,order_timestamp,sku,category,size,quantity,unit_price_inr,discount_pct,customer_id,channel,color,return_flag,source_row,customer_missing,unit_count,gross_value_inr,net_value_inr,order_day,year_week,month,day_of_week,is_weekend,size_unknown
+ORD-1028,LN-0056,2026-09-02 15:55:00+00:00,AC-07-XL,ACTIVE,XL,-2,999.00,0.05,C0056,MARKETPLACE,BLACK,True,57,False,2,1998.00,1898.10,2026-09-02,2026-W36,9,2,False,False
+ORD-1032,LN-0064,2026-09-10 13:03:00+00:00,AC-01-XL,ACTIVE,XL,-1,999.00,0.05,C0006,STORE,BLACK,True,65,False,1,999.00,949.05,2026-09-10,2026-W37,9,3,False,False

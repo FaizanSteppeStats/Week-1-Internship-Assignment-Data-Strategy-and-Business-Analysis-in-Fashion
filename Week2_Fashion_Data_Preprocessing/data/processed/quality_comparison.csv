@@ -1,0 +1,8 @@
+metric,before_or_raw_count,after_or_output_count
+Input rows,163,149
+Exact duplicate rows,2,0
+Rows with missing order id,1,0
+Rows with missing SKU,1,0
+Rows with missing customer id,2,2
+Rows quarantined,0,14
+Rows with unknown size,0,2
