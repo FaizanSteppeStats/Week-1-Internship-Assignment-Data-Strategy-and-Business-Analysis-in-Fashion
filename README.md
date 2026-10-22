@@ -1,53 +1,40 @@
-# Fashion Data Strategy | Junior Data Science Analyst Internship, Week 1
+# Week 1 — Data Strategy and Business Analysis in Fashion
 
-**Scope:** a documented, implementable data strategy for apparel, textiles and fashion, with a runnable offline demo of demand forecasting, inventory prioritisation and customer segmentation.
+**[EVALUATOR: START HERE](EVALUATOR_START_HERE.md)**
 
-**Data transparency:** all files in `data/` and `outputs/` are generated from **synthetic data** with a fixed random seed. No real fashion brand, customer, store or manufacturing performance is asserted. The demonstration is **not a validated business deployment**. An actual pilot would need transaction histories, true inventory snapshots, product master data, cost information and permission to use any personal data.
+This is the **improved October 22, 2026 evidence pack** addressing prior feedback about missing numerical analysis and difficult-to-find Python source. It includes reproducible synthetic data, runnable scripts, forecast/KPI comparisons, inventory decisions, RFM segmentation and an improved text version of the Word report.
 
-## Repo contents
+## Open immediately
 
-- `src/fashion_strategy_demo.py`: generates 78 weeks of sales for 16 fictitious SKUs, then runs transparent baseline/candidate forecasts, indicative reorder calculations and RFM segmentation of 520 fictitious customers.
-- `tests/test_metrics.py`: unit and integration checks.
-- `data/`: synthetic input CSVs.
-- `outputs/`: example output CSVs, PNG charts, and a summary JSON.
-- `Week1_Fashion_Data_Strategy_Report.docx`: assessment report.
-- `Submission_Description.txt`: report description (over 200 words).
+- **[Revised full report, readable online](Week1_Fashion_Data_Strategy_Improved_Report.md)** — expanded analysis and worked examples.
+- **[Runnable analysis entry point](run_analysis.py)** — one command.
+- **[Worked case-study Python source](src/case_study_analysis.py)** and **[original demand-modelling source](src/fashion_strategy_demo.py)**.
+- **[Interactive notebook](Week1_Fashion_Case_Study.ipynb)** — executes charts and result tables.
+- **[Numeric results](outputs/case_study_summary.json)**, **[forecast results](outputs/case_forecast_by_category.csv)**, **[inventory decisions](outputs/case_reorder_ranked.csv)**, and **[customer segmentation](outputs/case_segment_shares.csv)**.
+- **[Validation test](tests/test_case_study.py)**.
 
-## Run the code
+### Example findings (all synthetic)
+
+| Measure | Result |
+|---|---:|
+| SKUs / SKU-weeks | 16 / 1,248 |
+| Simulated units sold | 34,131 |
+| Baseline forecast WAPE | 19.09% |
+| Blend forecast WAPE | 18.86% |
+| SKU-week holdout observations | 153 |
+| Replenishment review | 11 SKUs, 149 units |
+| Simulated customers | 520 |
+
+The forecast improvement of 0.23 percentage points is modest and **not significant evidence for deployment**; the blended forecast worsened T-shirt performance. Analysis and gross sales are synthetic examples, not verified company results.
+
+## Run locally
 
 ```bash
-python -m venv .venv
-# Windows: .venv\Scripts\activate
-# macOS/Linux: source .venv/bin/activate
 pip install -r requirements.txt
-python src/fashion_strategy_demo.py
+python run_analysis.py
 python -m unittest discover -s tests -v
 ```
 
-The script overwrites its synthetic files for a reproducible baseline. The default seed is 42. All output files are written relative to the working directory. For another reproducible sample, run `python src/fashion_strategy_demo.py --seed 91`.
+No private company data or API keys are required. Original input data are located in `data/`; generated tables and metrics appear in `outputs/`.
 
-## How the analytics work
-
-1. **Demand:** expanding-history, rolling one-step predictions for each SKU on the final 12 weeks, skipping test weeks flagged as stockouts. Compare an uncomplicated four-week mean with a 55/45 blend of four- and eight-week means using WAPE. The forecasts use only weeks before the prediction date. Excluding out-of-stock weeks avoids treating censored test sales as full demand; training may still be censored, a limitation to correct before deployment.
-2. **Replenishment:** `reorder point = lead-time demand + 1.65 x rolling sample std dev x sqrt(lead-time weeks)`. The on-hand balances are **artificial demo values**, and the suggested quantity is `max(0, reorder point - demo on-hand)`. This is a simplified first pass (not a service-level guarantee, purchasing order, or lead-time distribution model).
-3. **Marketing:** recency, frequency and monetary (RFM) grouping with clear rule-based segments to explain potential campaign audiences. Any experiments should assess incremental outcomes with a control group, permission and unsubscribe safeguards; aggregate RFM is not incremental lift.
-
-## Methodology and caveats
-
-- Real sales can be censored by out-of-stocks and impacted by returns, holidays, prices, promotions and channel mix. These are not fully disentangled here.
-- Synthetic results cannot substantiate financial benefits, forecast accuracy for a real retailer, ROI or target achievement.
-- Forecast champion selection should be based on out-of-time holdout performance and stability, not just synthetic WAPE. Never randomly split time series or tune on the test period.
-- Google Trends is a *relative index* and is not a substitute for actual sales volume; respect source terms and attribution. H&M Kaggle competition data requires login and acceptance of the competition rules; do not copy its restricted files into this repository.
-- There is no real customer personal data in this project. For live operations, restrict access, pseudonymise identifiers and set a retention policy.
-
-## Data-source research links
-
-- [BoF/McKinsey, State of Fashion 2026](https://www.mckinsey.com/industries/retail/our-insights/state-of-fashion)
-- [Tamil Nadu Department of Handlooms textile sector](https://www.tnhandlooms.tn.gov.in/english/sectortext?t=1)
-- [Tamil Nadu circular textile transition report (2026)](https://tngcc.tn.gov.in/wp-content/uploads/2026/07/Reweaving-the-Circular-Transition-A-Pathway-for-Sustainable-Circular-Textiles-in-Tamil-Nadu.pdf)
-- [H&M Personalized Fashion Recommendations competition](https://www.kaggle.com/competitions/h-and-m-personalized-fashion-recommendations/data)
-- [Google Trends: export and cite data](https://support.google.com/trends/answer/4365538?hl=en)
-- [Open-Meteo Historical Weather API](https://open-meteo.com/en/docs/historical-weather-api)
-- [UCI Online Retail (general retail, not apparel-specific)](https://archive.ics.uci.edu/dataset/352/online+retail)
-
-
+**Word report note:** `Week1_Fashion_Data_Strategy_Report.docx` is the **original** DOCX already in the repository. The revised full report is shown in [GitHub-readable format](Week1_Fashion_Data_Strategy_Improved_Report.md). The revised 12-page `.docx` should be uploaded as the portal attachment. No company sales or personal data were used.

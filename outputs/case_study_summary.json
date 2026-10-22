@@ -1,0 +1,23 @@
+{
+  "data_type": "SYNTHETIC - NEVER REAL COMPANY DATA",
+  "sku_weeks": 1248,
+  "sku_count": 16,
+  "orders": 2374,
+  "customers": 520,
+  "units_sold": 34131,
+  "gross_merchandise_value_inr": 51174969,
+  "total_stockout_sku_weeks": 214,
+  "total_returned_units": 1986,
+  "holdout_sku_weeks_used": 153,
+  "holdout_sku_weeks_excluded_due_to_stockout": 39,
+  "overall_baseline_wape_pct": 19.09,
+  "overall_blend_wape_pct": 18.86,
+  "overall_improvement_pp": 0.23,
+  "wape_improvement_95pct_resampled_interval_pp": [
+    -0.364,
+    0.832
+  ],
+  "sku_reorder_reviews": 11,
+  "illustrative_total_reorder_units": 149,
+  "disclaimer": "Historical and financial results are fictional. No incremental marketing impact measured."
+}

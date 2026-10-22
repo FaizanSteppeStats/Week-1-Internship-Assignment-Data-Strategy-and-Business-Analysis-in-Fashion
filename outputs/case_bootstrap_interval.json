@@ -1,0 +1,5 @@
+{
+  "method": "2000 resamples of 12 held-out weeks, paired by week, descriptive only",
+  "wape_improvement_lower_pp": -0.364,
+  "wape_improvement_upper_pp": 0.832
+}

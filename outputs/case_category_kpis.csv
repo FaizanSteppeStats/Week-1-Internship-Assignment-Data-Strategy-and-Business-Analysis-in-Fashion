@@ -1,0 +1,5 @@
+category,sku_weeks,units_sold,gross_value_inr,returned_units,stockout_sku_weeks,stockout_sku_week_pct,return_units_pct
+ACTIVE,312,6173,9253327,370,55,17.63,5.99
+DENIM,312,6960,16001040,414,45,14.42,5.95
+KURTA,312,8312,15784488,457,62,19.87,5.5
+TSHIRT,312,12686,10136114,745,52,16.67,5.87
