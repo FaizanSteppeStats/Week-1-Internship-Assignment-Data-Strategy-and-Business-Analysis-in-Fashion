@@ -1,20 +1,34 @@
-# Evaluator guide — Week 2: Fashion data acquisition & preprocessing
+# Week 2 — Evaluator: START HERE (improved real-data submission)
 
-This repository provides both a detailed Week 2 Word report and **executed preprocessing code with numeric, reproducible evidence**. It addresses Week 1 feedback about the need to display concrete analysis and actual code rather than only a strategy.
+**NEW: observed public fashion retail data, alongside a separate deterministic synthetic stress test.**
 
-**Start at:** [README](README.md) → [preprocessing source](src/preprocess.py) → [data quality audit](data/processed/quality_audit.json) → [tests](tests/test_pipeline.py).
+1. **[Enhanced 10-page Word report](Week2_Data_Acquisition_and_Preprocessing_Report.docx)** — actual collection and unique-product counts, charts, cleaning decisions, source attributions and proposed joins.
+2. **[Real fashion source dataset](data/external/livostyle_collections.json)** + [stats source](data/external/livostyle_stats.json) — MIT licensed Livostyle public dataset, pinned upstream revision `0ce98ce4412b0c7b6b76d8fe809c1e78c7e16b5f` (18 Oct 2026 source sync).
+3. **[Real preprocessing Python](src/real_catalog_pipeline.py)** — validates counts, IDs and UTC timestamps; cleans HTML and SEO; preserves optional missing image fields; flags inconsistent membership totals. Run `python -m src.real_catalog_pipeline`.
+4. **[Real-data audit](outputs/real_catalog/real_catalog_quality_audit.json)** and [cleaned source table](outputs/real_catalog/real_collections_clean.csv).
+5. **[Real category distribution](outputs/real_catalog/real_product_category_shares.csv)** and [catalog anomalies](outputs/real_catalog/real_top_collections.csv).
+6. **[Synthetic quality fixture](data/raw/synthetic_fashion_orders.csv)** + [pipeline](run_pipeline.py) + [audit](data/processed/quality_audit.json). Real catalog is NOT sales data. Do not mix their metrics.
+7. **[Real-dataset unit tests](tests/test_real_catalog_pipeline.py)** and original 11 tests. 21 tests passed locally.
 
-## Actual demonstrator, not just a proposal
+## Key observed real-world outputs
 
-1. [Raw synthetic apparel transactions](data/raw/synthetic_fashion_orders.csv) — 163 input rows, malformed dates/prices, duplicate line IDs, missing customer, return records, mixed labels.
-2. [Cleaned sales CSV](data/processed/clean_sales.csv) — 147 rows, standardized fields and engineered features.
-3. [Returns CSV](data/processed/returns.csv) — 2 valid returns separated from sales.
-4. [Quarantined rows and reason codes](data/processed/quarantine.csv) — 14 rejected input records, each traceable to its raw CSV line.
-5. [Quality audit](data/processed/quality_audit.json) — SHA-256, missingness, reason counts and 163 = 147 + 2 + 14 reconciliation.
-6. [Weekly lag features](data/processed/weekly_features.csv) — time-aware feature engineering without look-ahead leakage.
-7. [Eleven tested assertions](tests/test_pipeline.py) — duplicate handling, schema validation, discounts, returns, reconciliation and lag features.
-8. [Structured data dictionary](DATA_DICTIONARY.md) and [source acquisition guide](README.md).
+| Observed field | Result |
+|---|---:|
+| Fashion collections | 161 |
+| Unique products, in source stats | 2,938 |
+| Missing image URLs | 3 |
+| Missing SEO descriptions | 1 |
+| Collections above unique product count | 2 |
+| Sum of overlapping collection memberships (NOT unique) | 36,682 |
+| Clothing share of unique product categories | 78.35% |
 
-**Run it:** `pip install -r requirements.txt`, then `python run_pipeline.py`, then `python -m unittest discover -s tests -v`.
+## Repeat
 
-All numbers are **synthetic demonstration outputs** and are not represented as company business performance. External sources, licenses/access controls, source limitations and concrete acquisition steps are described separately in the report.
+```bash
+python -m pip install -r requirements.txt
+python -m src.real_catalog_pipeline
+python run_pipeline.py
+python -m unittest discover -s tests -v
+```
+
+Data source: https://github.com/arturayupov/womens-fashion-catalog-open-data (MIT license, source revision pinned). **Catalog has no sales, orders, stock or consumer behavior observations.** Previous evaluated score is not evidence of a guaranteed new score.

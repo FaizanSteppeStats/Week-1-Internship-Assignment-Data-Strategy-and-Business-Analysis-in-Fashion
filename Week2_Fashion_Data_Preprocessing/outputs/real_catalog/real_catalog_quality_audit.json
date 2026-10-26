@@ -1,0 +1,26 @@
+{
+  "data_origin": "REAL PUBLIC RETAIL FASHION CATALOG; NOT SYNTHETIC",
+  "catalog_last_synced_utc": "2026-10-18T06:02:35Z",
+  "source_repo": "arturayupov/womens-fashion-catalog-open-data",
+  "source_commit": "0ce98ce4412b0c7b6b76d8fe809c1e78c7e16b5f",
+  "source_git_blob_shas": {
+    "collections": "43e734eacf4cceece717094d5fc0b6d8a3ed19b4",
+    "stats": "7d24955bb88dd20ada052f7d9362bddde65f16f9"
+  },
+  "input_collections": 161,
+  "valid_collection_rows": 161,
+  "quarantined_rows": 0,
+  "duplicate_collection_ids": 0,
+  "invalid_count_or_timestamp": 0,
+  "missing_collection_images": 3,
+  "missing_seo_descriptions": 1,
+  "seo_descriptions_derived_from_html": 1,
+  "collections_count_exceeding_unique_skus": 2,
+  "unique_products_source_stats": 2938,
+  "sum_of_all_collection_memberships_not_distinct_skus": 36682,
+  "product_category_totals_sum": 2938,
+  "product_category_groups": 6,
+  "products_with_reviews": 2309,
+  "review_coverage_pct": 78.59,
+  "caveat": "Collections may overlap, counts may be inconsistent with source distinct product count. Not sales, conversion, stock or unique SKUs."
+}
