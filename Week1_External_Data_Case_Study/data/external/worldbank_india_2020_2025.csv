@@ -1,0 +1,13 @@
+country,year,indicator_code,indicator_name,value_pct,source_url,source_lastupdated
+IND,2020,IT.NET.USER.ZS,Individuals using the Internet (% of population),43.40544313,https://api.worldbank.org/v2/country/IND/indicator/IT.NET.USER.ZS?format=json,2026-07-13
+IND,2021,IT.NET.USER.ZS,Individuals using the Internet (% of population),49.2580986,https://api.worldbank.org/v2/country/IND/indicator/IT.NET.USER.ZS?format=json,2026-07-13
+IND,2022,IT.NET.USER.ZS,Individuals using the Internet (% of population),55.9,https://api.worldbank.org/v2/country/IND/indicator/IT.NET.USER.ZS?format=json,2026-07-13
+IND,2023,IT.NET.USER.ZS,Individuals using the Internet (% of population),60.25230026,https://api.worldbank.org/v2/country/IND/indicator/IT.NET.USER.ZS?format=json,2026-07-13
+IND,2024,IT.NET.USER.ZS,Individuals using the Internet (% of population),64.9434967,https://api.worldbank.org/v2/country/IND/indicator/IT.NET.USER.ZS?format=json,2026-07-13
+IND,2025,IT.NET.USER.ZS,Individuals using the Internet (% of population),70,https://api.worldbank.org/v2/country/IND/indicator/IT.NET.USER.ZS?format=json,2026-07-13
+IND,2020,SP.URB.TOTL.IN.ZS,Urban population (% of total population),34.1286726088333,https://api.worldbank.org/v2/country/IND/indicator/SP.URB.TOTL.IN.ZS?format=json,2026-07-13
+IND,2021,SP.URB.TOTL.IN.ZS,Urban population (% of total population),34.4425517181304,https://api.worldbank.org/v2/country/IND/indicator/SP.URB.TOTL.IN.ZS?format=json,2026-07-13
+IND,2022,SP.URB.TOTL.IN.ZS,Urban population (% of total population),34.7555673994206,https://api.worldbank.org/v2/country/IND/indicator/SP.URB.TOTL.IN.ZS?format=json,2026-07-13
+IND,2023,SP.URB.TOTL.IN.ZS,Urban population (% of total population),35.0676918424186,https://api.worldbank.org/v2/country/IND/indicator/SP.URB.TOTL.IN.ZS?format=json,2026-07-13
+IND,2024,SP.URB.TOTL.IN.ZS,Urban population (% of total population),35.3788972368389,https://api.worldbank.org/v2/country/IND/indicator/SP.URB.TOTL.IN.ZS?format=json,2026-07-13
+IND,2025,SP.URB.TOTL.IN.ZS,Urban population (% of total population),35.689155772396,https://api.worldbank.org/v2/country/IND/indicator/SP.URB.TOTL.IN.ZS?format=json,2026-07-13

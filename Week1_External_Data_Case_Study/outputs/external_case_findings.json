@@ -1,0 +1,26 @@
+{
+  "observed_external_indicators": {
+    "data_provenance": "OBSERVED World Bank indicators, not synthetic fashion transactions",
+    "country": "India",
+    "period": "2020-2025",
+    "years_joined": 6,
+    "internet_users_pct_2020": 43.41,
+    "internet_users_pct_2025": 70.0,
+    "internet_change_percentage_points": 26.59,
+    "urban_population_pct_2020": 34.13,
+    "urban_population_pct_2025": 35.69,
+    "urban_change_percentage_points": 1.56
+  },
+  "hypothetical_fashion_scenario": {
+    "type": "ILLUSTRATIVE ASSUMPTIONS - NOT MEASURED",
+    "ad_impressions": 20000,
+    "ctr": 0.025,
+    "conversion_rate": 0.04,
+    "order_value_inr": 1800,
+    "advertising_cost_inr": 12000,
+    "clicks": 500,
+    "orders": 20,
+    "revenue_inr": 36000,
+    "roas": 3.0
+  }
+}
