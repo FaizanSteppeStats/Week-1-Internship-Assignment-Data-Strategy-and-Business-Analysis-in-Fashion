@@ -1,0 +1,7 @@
+fold,model,WAPE_pct,MAE_usd_million,bias_usd_million
+2024,ridge_fourier,8.26,1422.6,-151.34
+2024,seasonal_naive,3.48,599.25,-531.08
+2024,seasonal_trend,3.21,553.21,-410.21
+2025,ridge_fourier,9.57,1776.34,-1187.84
+2025,seasonal_naive,7.19,1334.33,-1325.0
+2025,seasonal_trend,6.12,1135.12,-1059.46

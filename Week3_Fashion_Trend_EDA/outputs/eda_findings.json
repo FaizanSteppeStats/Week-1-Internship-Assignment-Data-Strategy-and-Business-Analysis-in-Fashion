@@ -1,0 +1,19 @@
+{
+  "source": "Real U.S. Census monthly clothing-store sales via FRED, frozen 2026-10-15",
+  "n_months": 92,
+  "first_month": "2019-01-01",
+  "last_month": "2026-08-01",
+  "months_in_2021_2025": 60,
+  "missing_clothing": 0,
+  "zero_or_negative_clothing": 0,
+  "avg_2021_2025": 16961.07,
+  "median_december_2021_2025": 24904.0,
+  "median_february_2021_2025": 13118.0,
+  "dec_to_feb_multiple": 1.9,
+  "level_correlation_clothing_accessory": 0.9855,
+  "yoy_change_correlation": 0.9997,
+  "outliers_mad_3_5": 16,
+  "apr_2020": 1642,
+  "apr_2019": 15238,
+  "data_caution": "Nominal NSA national retail sales not product searches or local demand. 2026 has only January\u2013August; never compare its sum with full calendar years."
+}

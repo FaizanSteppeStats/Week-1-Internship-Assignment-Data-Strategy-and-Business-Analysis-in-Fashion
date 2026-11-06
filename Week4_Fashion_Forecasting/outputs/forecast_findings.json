@@ -1,0 +1,15 @@
+{
+  "data": "Observed US clothing store sales, FRED MRTSSM4481USN",
+  "target": "National monthly nominal USD million, NSA",
+  "model_selection_method": "2024 and 2025 rolling-origin fixed 12-month folds",
+  "untouched_holdout": "2026 Jan-Aug",
+  "chosen_model": "seasonal_trend",
+  "backtest_WAPE_pct": 4.72,
+  "holdout_WAPE_pct": 2.66,
+  "holdout_seasonal_naive_WAPE_pct": 5.69,
+  "forecast_horizon": "Sep 2026\u2013Aug 2027",
+  "illustrative_band_80pct_absolute_percentage_error": 10.0,
+  "interval_warning": "Illustrative stress bands from 2026 holdout, NOT statistically calibrated prediction intervals; may fail if regime changes.",
+  "scope": "US sector aggregate, not SKU-level fashion demand or India-specific retail prediction.",
+  "future_warning": "Forward forecasts are model scenarios, not observed future sales."
+}

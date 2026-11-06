@@ -1,0 +1,15 @@
+{
+  "provider": "U.S. Census Bureau via FRED",
+  "series": [
+    "MRTSSM4481USN",
+    "MRTSSM448USN"
+  ],
+  "unit": "Millions of nominal USD, monthly, not seasonally adjusted",
+  "last_reported_month": "2026-08",
+  "publication_snapshot_date": "2026-10-15",
+  "urls": [
+    "https://fred.stlouisfed.org/data/MRTSSM4481USN",
+    "https://fred.stlouisfed.org/data/MRTSSM448USN"
+  ],
+  "caveat": "Published historical estimates may be revised; the CSV is a frozen manual transcription from 15 Oct 2026 FRED series tables. No 2026-09+ observations were available as of 6 Nov 2026. Not a local Indian fashion-retailer data set."
+}
