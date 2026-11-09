@@ -1,0 +1,6 @@
+{
+  "origin":"Real public Livostyle retail catalog, GitHub Week 2 case study, snapshot 2026-10-18",
+  "source_repo_file":"Week2_Fashion_Data_Preprocessing/outputs/real_catalog/real_catalog_quality_audit.json",
+  "input_collections":161,"unique_products_source_stats":2938,"missing_collection_images":3,"missing_seo_descriptions":1,"collections_count_exceeding_unique_skus":2,"overlapping_collection_memberships_not_distinct_skus":36682,
+  "warning":"Collection memberships overlap; not sales, demand, return rates or distinct stock units."
+}

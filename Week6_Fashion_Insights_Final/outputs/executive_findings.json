@@ -1,0 +1,17 @@
+{
+  "scope": "Final synthesis of previously prepared demonstrations and frozen public datasets; no private employer data",
+  "week1_observed_internet_access_increase_pp": 26.59,
+  "week2_real_catalog_missing_images": 3,
+  "week2_synthetic_reconciliation_pct": 100.0,
+  "week3_clothing_months": 92,
+  "week3_dec_to_feb_ratio": 1.9,
+  "week4_selected_backtest_wape_pct": 4.72,
+  "week4_holdout_wape_pct": 2.66,
+  "week4_seasonal_naive_holdout_wape_pct": 5.69,
+  "week4_holdout_improvement_pp": 3.04,
+  "week4_holdout_mean_signed_error_usd_million": -484.38,
+  "week4_largest_holdout_absolute_error_usd_million": 1256.0,
+  "week4_largest_holdout_error_month": "2026-02",
+  "distinction": "Observed values and historical model tests are evidence; scenario interventions are unmeasured proposals.",
+  "scope_limitation": "U.S. national store sales cannot measure India store-level units, margins, conversion, or causal effects."
+}

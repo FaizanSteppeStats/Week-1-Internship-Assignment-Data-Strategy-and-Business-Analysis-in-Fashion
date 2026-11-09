@@ -1,0 +1,4 @@
+model,WAPE_pct,MAE_usd_million,bias_usd_million
+seasonal_trend,4.72,844.17,-734.83
+seasonal_naive,5.4,966.79,-928.04
+ridge_fourier,8.94,1599.47,-669.59

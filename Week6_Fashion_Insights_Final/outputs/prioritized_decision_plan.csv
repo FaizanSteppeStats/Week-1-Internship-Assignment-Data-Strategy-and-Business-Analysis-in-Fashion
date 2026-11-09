@@ -1,0 +1,5 @@
+rank,initiative,owner,metric,target,timeframe,go_no_go
+1,Deploy schema and duplicate gates,Data analyst + data steward,Accepted rows valid / unique,100% critical checks; 0 duplicate accepted keys,Weeks 1–2,No release if reconciliation fails
+2,Remediate missing catalog images/SEO,Merchandising catalog owner,Missing image URLs and SEO summaries,Resolve 3 image and 1 SEO exceptions from snapshot,Weeks 2–3,Human sign-off; do not invent assets
+3,Trial season-aware forecasts,Demand planning + analyst,Holdout WAPE and bias vs seasonal naive,Show repeated improvement across category/time tests,Weeks 3–5,Do not automate replenishment on national aggregate
+4,Consent-based digital pilot,Marketing + privacy lead,Incremental contribution per exposed group,Pre-register and evaluate lift against holdout,Weeks 4–6,No personalized targeting without lawful basis

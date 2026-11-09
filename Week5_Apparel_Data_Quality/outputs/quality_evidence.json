@@ -1,0 +1,67 @@
+{
+  "synthetic_case": {
+    "source_type": "SYNTHETIC 163-row apparel cleaning fixture",
+    "raw_rows": 163,
+    "accepted_sales": 147,
+    "accepted_returns": 2,
+    "quarantined_rows": 14,
+    "record_conservation": true,
+    "accepted_pct": 91.41,
+    "raw_populated_critical_field_pct": 99.63,
+    "accepted_populated_critical_field_pct": 100.0,
+    "raw_exact_duplicate_rows": 2,
+    "accepted_unique_line_ids": true,
+    "guest_customer_rows": 2,
+    "net_sales_inr_synthetic": 268664.55,
+    "gross_sales_inr_synthetic": 292860.0,
+    "return_units_separated": 3,
+    "quarantine_reason_counts": {
+      "INVALID_DISCOUNT": 2,
+      "INVALID_QUANTITY": 2,
+      "INVALID_PRICE": 2,
+      "MISSING_SKU": 1,
+      "INVALID_DATE": 1,
+      "RETURN_SIGN_MISMATCH": 1,
+      "MISSING_CATEGORY": 1,
+      "MISSING_ORDER_ID": 1,
+      "EXACT_DUPLICATE": 2,
+      "CONFLICTING_LINE_ID": 1
+    }
+  },
+  "public_series_case": {
+    "origin": "OBSERVED PUBLIC U.S. CENSUS / FRED SERIES; NOT A LOCAL FASHION RETAILER",
+    "series": "MRTSSM4481USN",
+    "source_url": "https://fred.stlouisfed.org/series/MRTSSM4481USN",
+    "source_vintage": [
+      "2026-10-15"
+    ],
+    "raw_sha256": "847dd0086115d68ccbb9d1400edb73349b7ea765ffe197dc93d2e7c0f8546774",
+    "monthly_rows": 92,
+    "first_month": "2019-01",
+    "last_month": "2026-08",
+    "missing_target_months": 0,
+    "missing_target_month_labels": [],
+    "invalid_target_values": 0,
+    "invalid_dates": 0,
+    "duplicate_months": 0,
+    "not_first_of_month_dates": 0,
+    "additional_accessory_series_missing_rows": 12,
+    "yoy_robust_z_review_flags": 16,
+    "apr_2020_sales_usd_million": 1642.0,
+    "apr_2019_sales_usd_million": 15238.0,
+    "quality_release_rule": "Pass observed-series completeness, uniqueness, schema and positive-target checks; review shock flags as genuine historical events, never auto-delete",
+    "passed_structural_gates": true,
+    "accuracy_verified_against_independent_ground_truth": false,
+    "warning": "Nominal U.S. monthly aggregate; economic shocks and data revisions matter. FRED values may change at later vintages."
+  },
+  "release_status": "CONDITIONALLY PASS: only accepted sales/returns and validated monthly target are analysis-ready; quarantined transaction rows need steward review",
+  "quality_accuracy_caveat": "These checks prove specified validity/consistency properties, not independent truth of prices, products or national estimates.",
+  "monitoring_proposal": {
+    "critical_keys": "100% accepted rows",
+    "monthly_series_completeness": "100% expected month starts",
+    "duplicate_line_ids": "0 accepted",
+    "source_vintage": "record each run",
+    "rejected_records": "quarantine with reason; track trend weekly",
+    "real_outliers": "review, not automatically removed"
+  }
+}

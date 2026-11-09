@@ -1,0 +1,8 @@
+check,before,target_or_after,unit,decision
+Completeness: five critical fields,99.63,100.0,% of populated critical cells,Pass after correction
+Structural validity / acceptance,91.41,100.0,% of input records passing,Quarantine failures; no blind deletion
+Exact-duplicate input rows,2.0,0.0,rows,Quarantine exact duplicates
+Accepted line-id collisions,0.0,0.0,rows,Block release if >0
+Missing customer identifiers,2.0,0.0,rows,"Retain as guest, exclude personal features"
+FRED missing months,0.0,0.0,months,Block forecast data release
+FRED unusual YoY changes,16.0,,flags,Review historical causes; do not auto-impute

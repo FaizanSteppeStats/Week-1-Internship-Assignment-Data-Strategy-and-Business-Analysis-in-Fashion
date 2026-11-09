@@ -1,0 +1,10 @@
+{
+  "origin": "Observed World Bank India indicators reproduced from Week 1 GitHub case study (source snapshot)",
+  "source_repo_file": "Week1_External_Data_Case_Study/outputs/external_case_findings.json",
+  "years_joined": 6,
+  "internet_users_pct_2020": 43.41,
+  "internet_users_pct_2025": 70.0,
+  "urban_population_pct_2020": 34.13,
+  "urban_population_pct_2025": 35.69,
+  "warning": "Country indicators are not evidence of fashion ecommerce conversion; marketing inputs in Week 1 were hypothetical."
+}

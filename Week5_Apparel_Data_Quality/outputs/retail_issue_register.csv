@@ -1,0 +1,11 @@
+issue,rows,action
+EXACT_DUPLICATE,2,Quarantine for correction/replay
+INVALID_DISCOUNT,2,Quarantine for correction/replay
+INVALID_PRICE,2,Quarantine for correction/replay
+INVALID_QUANTITY,2,Quarantine for correction/replay
+CONFLICTING_LINE_ID,1,Quarantine for correction/replay
+INVALID_DATE,1,Quarantine for correction/replay
+MISSING_CATEGORY,1,Quarantine for correction/replay
+MISSING_ORDER_ID,1,Quarantine for correction/replay
+MISSING_SKU,1,Quarantine for correction/replay
+RETURN_SIGN_MISMATCH,1,Quarantine for correction/replay

@@ -1,0 +1,6 @@
+week,evidence,observed,decision,validation,caveat
+1,India public internet access / urban share,Internet use 43.41% to 70.0% (2020–2025),Explore digital-reach pilot; do not infer apparel conversion,Local consented channel conversion A/B test,Macro correlation is not fashion sales
+2,Public fashion catalog integrity,"161 collections; 3 missing images, 1 missing SEO summaries",Create catalog completeness SLA and review counts,Monthly media coverage / exception-resolution rates,Overlapping collection counts not unique products
+2/5,Synthetic apparel transaction stress test,"163 input, 147 sales, 2 returns, 14 quarantine",Block invalid financial rows; separate returns,100% reconciled rows; zero accepted duplicate line ids,"Synthetic fixture, not actual business transactions"
+3,U.S. Census clothing-store monthly sales,92 months; Dec/Feb seasonal median 1.90x,"Test seasonality as a planning prior, not as local reorder quantity",Local same-month unit-sales comparison over >=2 years,National USD values not SKU-level units
+4,Forecast holdout and model comparison,WAPE 2.66% selected vs 5.69% naive (eight 2026 months),Pilot forecasts with monitoring before any automated buying,"Repeat rolling-origin holdouts, bias, and by-category WAPE",Short holdout; potential revisions/drift
